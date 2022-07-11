@@ -1,8 +1,7 @@
 import streamlit
 import pandas
-import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
-streamlit.write('The User Entered',fruit_choice)
+
+
 
 
 streamlit.title('My Parents New Healthy Diner')
@@ -28,6 +27,10 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(my_fruit_list)
 
 streamlit.header("Fruityvice Fruit Advice!")
+
+streamlit.write('The User Entered',fruit_choice)
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 #streamlit.text(fruityvice_response.json())
 # write your own comment -what does the next line do? 
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
