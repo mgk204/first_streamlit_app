@@ -1,7 +1,7 @@
 import streamlit
 import pandas
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"+"kiwi")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"+"kiwifruit")
 
 
 streamlit.title('My Parents New Healthy Diner')
